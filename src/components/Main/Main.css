@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.main{
+    background-color: #191919;
+    width: 100%;
+    height: 100vh;
+    min-height: max-content;
+}
+
+.headingImage{
+    width: 40vh;
+    height: 20vh;
+
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingText{
+    color: #D7AE1C;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.headingText2{
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    font-size: 1.35rem;
+    padding: 20px 0px;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222222;
+    margin: 15px 50px;
+    border-radius: 12px;
+    max-width: 400px ;
+    width: 100%;
+
+}
+
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  
+
+  .RequestButton{
+    width: 200px;
+    height: 50px;
+    background-color: #373737;
+    border: none;
+    border-radius: 4px;
+    margin: 25px;
+    color:#636363;
+    font-weight: 600;
+    
+  }
+  
+  .RequestButton:active {
+    background-color: #D7AE1C;
+    color:#1f1f1f;
+    transition-duration: 0.5s;
+  }
+
+  .RequestButton:focus {
+    background-color: #D7AE1C;
+    color:#1f1f1f;
+    transition-duration: 0.5s;
+  }
+
+
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #616161;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.or-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #616161;
+}
+
+.lastPara1{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    font-weight: 300;
+}
+
+.lastPara2{
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+/* For the invalid state (default) */
+.RequestButton.invalid {
+  background-color: #373737;
+  cursor: not-allowed;
+}
+
+/* For the valid state */
+.RequestButton.valid {
+  background-color: #D7AE1C;
+  color: black;
+  cursor: pointer;
+}
+
+
+.warningText{
+  color: rgb(182, 1, 1);
+  transition-duration: 0.5s;
+  display: none;
+}
